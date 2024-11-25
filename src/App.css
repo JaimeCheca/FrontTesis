@@ -1,0 +1,41 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  background-color: #e0e0e0;
+  min-height: 100vh;
+  padding: 20px;
+  width: 100%;          /* Asegura que el contenedor ocupe todo el ancho */
+  box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.maps-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;  /* Distribuye el espacio entre los mapas */
+  align-items: flex-start;
+  width: 100%;          /* Ocupa todo el ancho */
+}
+
+.map-wrapper {
+  flex: 1;              /* Permite que cada mapa crezca y llene el espacio disponible */
+  margin: 10px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .maps-container {
+    flex-direction: column;
+  }
+
+  .map-wrapper {
+    flex: 1 1 100%;
+  }
+}
